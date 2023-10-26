@@ -26,5 +26,15 @@ services:
     networks:
       - kafka-net
 
+  sql-server:
+    image: mssql-image:latest  # Reemplaza con el nombre y etiqueta de tu imagen personalizada
+    environment:
+      SA_PASSWORD: TuClaveSuperSegura
+      ACCEPT_EULA: Y
+    ports:
+      - "1433:1433"
+    networks:
+      - kafka-net
+
 networks:
   kafka-net:
