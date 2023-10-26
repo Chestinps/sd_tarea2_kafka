@@ -1,8 +1,9 @@
 from kafka import KafkaConsumer
 import json
 
-servidores_bootstrap = 'kafka:9092'
-topic_temperatura = 'temperatura'
+# Configuración de los servidores Kafka
+servidores_bootstrap = 'kafka:9092'  # Usa el nombre del servicio del contenedor Kafka
+topic_temperatura = 'temperatura'  # Utiliza el tópico correspondiente en tu configuración
 grupo_consumidores = 'grupo_consumidores_temperatura'
 
 consumer = KafkaConsumer(
