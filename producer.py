@@ -5,8 +5,8 @@ import random
 import string
 
 # Configuración de los servidores Kafka
-servidores_bootstrap = 'localhost:9092'  # Cambia a la dirección de tus servidores Kafka
-topic_inscripcion = 'inscripcion'  # Cambia al tópico correspondiente
+servidores_bootstrap = 'kafka:9092'  # Usa el nombre del servicio del contenedor Kafka
+topic_inscripcion = 'inscripcion'  # Utiliza el tópico correspondiente en tu configuración
 
 productor = KafkaProducer(
     bootstrap_servers=[servidores_bootstrap],
