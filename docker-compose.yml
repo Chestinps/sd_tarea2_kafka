@@ -29,7 +29,7 @@ services:
   sql-server:
     image: mssql-image:latest  # Reemplaza con el nombre y etiqueta de tu imagen personalizada
     environment:
-      SA_PASSWORD: TuClaveSuperSegura
+      SA_PASSWORD: UnaClaveSegura123!
       ACCEPT_EULA: Y
     ports:
       - "1433:1433"

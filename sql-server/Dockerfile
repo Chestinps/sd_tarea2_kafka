@@ -3,7 +3,7 @@ FROM mcr.microsoft.com/mssql/server:2019-latest
 
 # Establece las variables de entorno de SQL Server
 ENV ACCEPT_EULA=Y
-ENV SA_PASSWORD=TuClaveSuperSegura
+ENV SA_PASSWORD=UnaClaveSegura123!
 ENV MSSQL_PID=Express
 
 # Copia los archivos SQL de inicialización en la imagen
